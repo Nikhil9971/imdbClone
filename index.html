@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f95093631e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="searchContainer">
+            <div class="logo">
+                <a href="favourite.html"><h1 id="imdb">IMDb</h1> </a>
+            </div>
+            <div class="searchElement">
+                <input type = "text" class = "formControl" placeholder="Search" id="movieSearchBox" onkeyup="findMovies()" onclick="findMovies()">
+                <div class="searchList" id="searchList"></div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <div class="container">
+                <div class="resultContainer">
+                    <div class="resultGrid" id="resultGrid"></div>
+                </div>
+            </div>
+            <div class="favSection">
+                <div id="favSectionHeader">
+                    <h1>Favourite Movies</h1>
+                    <button class="refresh" onclick="refreshAll()"><b>Clear</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="index.js"></script>
+</html>
